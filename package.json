@@ -1,0 +1,43 @@
+{
+  "name": "inbox-zero",
+  "private": true,
+  "scripts": {
+    "build": "turbo build --filter=./apps/web",
+    "dev": "turbo dev --filter=./apps/web",
+    "test": "turbo run test --filter=./apps/web",
+    "lint": "turbo lint",
+    "prepare": "husky install",
+    "ncu": "ncu -u -ws",
+    "format-and-lint": "biome check .",
+    "format-and-lint:fix": "biome check . --write",
+    "setup": "tsx packages/cli/src/main.ts setup"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.2",
+    "@clack/prompts": "0.11.0",
+    "@turbo/gen": "2.6.2",
+    "commander": "14.0.2",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.5",
+    "prettier": "3.6.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "4.21.0",
+    "turbo": "2.6.2",
+    "ultracite": "5.3.3"
+  },
+  "packageManager": "pnpm@10.24.0",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [
+      "npx ultracite fix"
+    ]
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.0.10",
+      "@types/react-dom": "19.0.4"
+    }
+  }
+}
