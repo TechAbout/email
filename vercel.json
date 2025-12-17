@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm i -g pnpm@9.12.3 && pnpm install --no-frozen-lockfile",
+  "buildCommand": "pnpm turbo build --filter=inbox-zero-ai",
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs"
+}
+
