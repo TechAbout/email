@@ -128,7 +128,12 @@
         "NEXT_PUBLIC_AXIOM_TOKEN",
         "NEXT_PUBLIC_OLLAMA_MODEL",
         "NEXT_PUBLIC_DUB_REFER_DOMAIN",
-        "NEXT_PUBLIC_USE_AEONIK_FONT"
+        "NEXT_PUBLIC_USE_AEONIK_FONT",
+
+        "NEXT_PUBLIC_SUPABASE_URL",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+        "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
+        "SUPABASE_SERVICE_ROLE_KEY"
       ],
       "outputs": [".next/**", "!.next/cache/**"]
     },
